@@ -1,6 +1,7 @@
-package io.github.fernandoferreira.medvoll.api.domain.doctor;
+package io.github.fernandoferreira.medvoll.api.domain.doctor.entity;
 
 import io.github.fernandoferreira.medvoll.api.domain.common.Address;
+import io.github.fernandoferreira.medvoll.api.domain.doctor.Specialty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

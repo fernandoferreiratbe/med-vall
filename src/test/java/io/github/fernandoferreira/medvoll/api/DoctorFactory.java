@@ -3,7 +3,7 @@ package io.github.fernandoferreira.medvoll.api;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.fernandoferreira.medvoll.api.domain.common.AddressRecord;
-import io.github.fernandoferreira.medvoll.api.domain.doctor.DoctorRequest;
+import io.github.fernandoferreira.medvoll.api.domain.doctor.dto.DoctorRequest;
 import io.github.fernandoferreira.medvoll.api.domain.doctor.Specialty;
 
 public class DoctorFactory {
