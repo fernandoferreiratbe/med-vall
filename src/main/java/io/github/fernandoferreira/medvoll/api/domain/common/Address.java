@@ -1,4 +1,4 @@
-package io.github.fernandoferreira.medvoll.api.domain;
+package io.github.fernandoferreira.medvoll.api.domain.common;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

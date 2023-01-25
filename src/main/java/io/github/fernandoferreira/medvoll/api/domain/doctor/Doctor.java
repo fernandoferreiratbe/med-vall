@@ -1,6 +1,6 @@
 package io.github.fernandoferreira.medvoll.api.domain.doctor;
 
-import io.github.fernandoferreira.medvoll.api.domain.Address;
+import io.github.fernandoferreira.medvoll.api.domain.common.Address;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
