@@ -2,6 +2,7 @@ package io.github.fernandoferreira.medvoll.api.domain.doctor.entity;
 
 import io.github.fernandoferreira.medvoll.api.domain.common.Address;
 import io.github.fernandoferreira.medvoll.api.domain.doctor.Specialty;
+import io.github.fernandoferreira.medvoll.api.domain.doctor.dto.DoctorRequest;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -25,5 +26,13 @@ public class Doctor {
     private Specialty specialty;
     @Embedded
     private Address address;
+
+    public Doctor(DoctorRequest doctorRequest) {
+        this.name = doctorRequest.name();
+        this.email = doctorRequest.email();
+        this.crm = doctorRequest.crm();
+        this.specialty = doctorRequest.specialty();
+        this.address = new Address(doctorRequest.address());
+    }
 
 }

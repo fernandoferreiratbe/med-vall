@@ -19,4 +19,13 @@ public class Address {
     private String additionalInfo;
     private String number;
 
+    public Address(AddressRecord address) {
+        this.street = address.street();
+        this.district = address.district();
+        this.cep = address.cep();
+        this.city = address.city();
+        this.uf = address.uf();
+        this.additionalInfo = address.additionalInfo();
+        this.number = address.number();
+    }
 }
