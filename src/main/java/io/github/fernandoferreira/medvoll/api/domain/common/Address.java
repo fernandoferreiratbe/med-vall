@@ -13,7 +13,7 @@ public class Address {
 
     private String street;
     private String district;
-    private String cep;
+    private String zip;
     private String city;
     private String uf;
     private String additionalInfo;
@@ -22,7 +22,7 @@ public class Address {
     public Address(AddressRecord address) {
         this.street = address.street();
         this.district = address.district();
-        this.cep = address.cep();
+        this.zip = address.zip();
         this.city = address.city();
         this.uf = address.uf();
         this.additionalInfo = address.additionalInfo();
