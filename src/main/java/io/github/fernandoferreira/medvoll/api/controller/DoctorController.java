@@ -2,6 +2,7 @@ package io.github.fernandoferreira.medvoll.api.controller;
 
 import io.github.fernandoferreira.medvoll.api.domain.doctor.dto.DoctorRequest;
 import io.github.fernandoferreira.medvoll.api.service.DoctorService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,7 +17,7 @@ public class DoctorController {
     private DoctorService doctorService;
 
     @PostMapping
-    public void postDoctor(@RequestBody DoctorRequest doctorRequest) {
+    public void postDoctor(@RequestBody @Valid DoctorRequest doctorRequest) {
         this.doctorService.save(doctorRequest);
     }
 }
